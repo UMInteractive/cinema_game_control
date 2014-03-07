@@ -14,9 +14,9 @@
     testApp *noiseWarz;
     NSMutableArray *bonjourList;
 }
-@property (retain, nonatomic) IBOutlet UIButton *joinButton;
 -(void) updateBonjourList:(NSString *)bonjourAddress;
 - (IBAction)joinGameSelected:(id)sender;
 - (IBAction)touchDown:(id)sender;
+- (IBAction)credits:(id)sender;
 
 @end

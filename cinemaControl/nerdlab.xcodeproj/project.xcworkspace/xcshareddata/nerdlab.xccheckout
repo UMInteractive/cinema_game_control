@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7AB1FB1B-CB31-40C3-858A-AF1A7D65049B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>nerdlab</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>43A4108C-DD28-4A52-B485-1B760FA01A9D</key>
+		<string>https://github.com/UMInteractive/cinema_games.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cinemaControl/nerdlab.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>43A4108C-DD28-4A52-B485-1B760FA01A9D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/UMInteractive/cinema_games.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>43A4108C-DD28-4A52-B485-1B760FA01A9D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>43A4108C-DD28-4A52-B485-1B760FA01A9D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cinema_games</string>
+		</dict>
+	</array>
+</dict>
+</plist>

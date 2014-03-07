@@ -1,10 +1,8 @@
 #include "testApp.h"
 #include "ofxiPhoneExtras.h"
 #include "SetupViewController.h"
-#include "PauseViewController.h"
 
 
-PauseViewController *pauseController;
 SetupViewController *setupController;
 
 //--------------------------------------------------------------
@@ -35,9 +33,9 @@ void testApp::setup(){
 	ofSetFrameRate(60);
 
 	ofBackground(0);
-    pauseController = [[PauseViewController alloc] initWithNibName:@"PauseViewController" bundle:nil];
-    [ofxiPhoneGetGLView() addSubview:pauseController.view];
-    pauseController.view.hidden = true;
+//    pauseController = [[PauseViewController alloc] initWithNibName:@"PauseViewController" bundle:nil];
+//    [ofxiPhoneGetGLView() addSubview:pauseController.view];
+//    pauseController.view.hidden = true;
     
     setupController = [[SetupViewController alloc] initWithNibName:@"SetupViewController" bundle:nil];
     [ofxiPhoneGetGLView() addSubview:setupController.view];
@@ -102,6 +100,9 @@ void testApp::update(){
             m.addFloatArg(power);
             sender.sendMessage(m);
 
+        }
+        else {
+            micAmplitude = 0;
         }
 
     }
@@ -224,7 +225,10 @@ void testApp::draw(){
 
                 break;
             case GAME_STATE_WAITING:
+                playerImage[playerSubteam].draw(ofGetWidth()/2, playerImage[playerSubteam].height/2 + 20);
                 joystix.drawStringCentered("Waiting for Players...", ofGetWidth()/2, ofGetHeight()/2);
+                joystix.drawStringCentered("Double Tap to Quit", ofGetWidth()/2, ofGetHeight()/2 + 30);
+
                 break;
             case GAME_STATE_PLAYING:
                 break;
@@ -255,7 +259,7 @@ void testApp::onRemovedService(const void* sender, string &serviceIp) {
 
 //----------------
 void testApp::endGame() {
-    pauseController.view.hidden = true;
+//    pauseController.view.hidden = true;
     setupController.view.hidden = false;
 }
 
@@ -308,10 +312,6 @@ void testApp::touchDown(ofTouchEventArgs & touch){
             holding = true;
         }
         
-        if (touch.x >= ofGetWidth() - 60 && touch.y <= 60) {
-            playing = false;
-            pauseController.view.hidden = false;
-        }
     }
 
 }
@@ -354,6 +354,14 @@ void testApp::touchDoubleTap(ofTouchEventArgs & touch){
     if (gameState == GAME_STATE_NO_SERVER_CONNECTION) {
         setupController.view.hidden = false;
 
+    }
+    if (gameState == GAME_STATE_WAITING) {
+        setupController.view.hidden = false;
+        ofxOscMessage m;
+        m.setAddress( "/quit" );
+        m.addIntArg(playerNumber);
+        sender.sendMessage(m);
+    
     }
 }
 

@@ -7,11 +7,11 @@
 //
 
 #import "SetupViewController.h"
+#import "CreditsViewController.h"
 
 @interface SetupViewController ()
 @end
 @implementation SetupViewController
-@synthesize joinButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,14 +26,13 @@
 {
 
 
-     [super viewDidLoad];
+    [super viewDidLoad];
     noiseWarz = (testApp*)ofGetAppPtr();
-    [joinButton.layer setBorderWidth:1.0f];
     bonjourList = [[NSMutableArray alloc] init];
-
+/*
     [bonjourList addObject:@"192.168.1.1"];
     [bonjourList addObject:@"192.168.1.12"];
-  
+  */
 }
 
 
@@ -139,8 +138,14 @@
     //  [nameTextField resignFirstResponder];
 }
 
+- (IBAction)credits:(id)sender {
+    CreditsViewController *credits = [[CreditsViewController alloc] initWithNibName:@"CreditsViewController" bundle:nil];
+    [self presentViewController:credits animated:YES completion:nil];
+}
+
 -(void) updateBonjourList :(NSString *)bonjourAddress{
     [bonjourList addObject:bonjourAddress];
+
     //[bonjourPicker reloadAllComponents];
 }
 

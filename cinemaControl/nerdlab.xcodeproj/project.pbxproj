@@ -24,6 +24,18 @@
 		6F7230C5184CF133009BFCCD /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7230C3184CF133009BFCCD /* SetupViewController.xib */; };
 		6F7230CD184D3EF5009BFCCD /* PauseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F7230CB184D3EF5009BFCCD /* PauseViewController.mm */; };
 		6F7230CE184D3EF5009BFCCD /* PauseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7230CC184D3EF5009BFCCD /* PauseViewController.xib */; };
+		6FD5616018BADDEF001617F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5615A18BADDEF001617F7 /* Default.png */; };
+		6FD5616118BADDEF001617F7 /* bg-nerd_lab_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5615B18BADDEF001617F7 /* bg-nerd_lab_logo.png */; };
+		6FD5616218BADDEF001617F7 /* bg-space.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5615C18BADDEF001617F7 /* bg-space.png */; };
+		6FD5616318BADDEF001617F7 /* Credits.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5615D18BADDEF001617F7 /* Credits.png */; };
+		6FD5616418BADDEF001617F7 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5615E18BADDEF001617F7 /* Play.png */; };
+		6FD5616518BADDEF001617F7 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5615F18BADDEF001617F7 /* Play@2x.png */; };
+		6FD5616F18BAE54B001617F7 /* bg-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5616E18BAE54B001617F7 /* bg-1.png */; };
+		6FD5617318BAE604001617F7 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5617118BAE604001617F7 /* CreditsViewController.m */; };
+		6FD5617418BAE604001617F7 /* CreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5617218BAE604001617F7 /* CreditsViewController.xib */; };
+		6FD5617818BAF01B001617F7 /* Credits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5617618BAF01B001617F7 /* Credits@2x.png */; };
+		6FD5617918BAF01B001617F7 /* Default-568h@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5617718BAF01B001617F7 /* Default-568h@2x.png.png */; };
+		6FD5617B18BAF0AA001617F7 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5617A18BAF0AA001617F7 /* Icon-120.png */; };
 		6FFE12D118AEFD7600E0DFC7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFE12CF18AEFA6E00E0DFC7 /* CFNetwork.framework */; };
 		6FFE130C18AFDFFF00E0DFC7 /* ofxBonjourIp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6FFE130A18AFDFFF00E0DFC7 /* ofxBonjourIp.cpp */; };
 		6FFE13A118B129E200E0DFC7 /* nerdlab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FFE13A018B129E200E0DFC7 /* nerdlab.png */; };
@@ -70,7 +82,7 @@
 		00d6d32b84b099226431108cea775a33 /* ofxOsc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOsc.h; path = ../../../addons/ofxOsc/src/ofxOsc.h; sourceTree = SOURCE_ROOT; };
 		029684cf678f70f6d3537a29773654a6 /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscOutboundPacketStream.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* cinemaControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cinemaControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* nerdlab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nerdlab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		20f35afadaf0068b067e713fa3152568 /* OscReceivedElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscReceivedElements.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h; sourceTree = SOURCE_ROOT; };
 		23640f57df6c4bb6bfc5da4c2199c7dd /* PacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PacketListener.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h; sourceTree = SOURCE_ROOT; };
@@ -94,6 +106,27 @@
 		6F7230CA184D3EF5009BFCCD /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseViewController.h; path = ../PauseViewController.h; sourceTree = "<group>"; };
 		6F7230CB184D3EF5009BFCCD /* PauseViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PauseViewController.mm; path = ../PauseViewController.mm; sourceTree = "<group>"; };
 		6F7230CC184D3EF5009BFCCD /* PauseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PauseViewController.xib; path = ../PauseViewController.xib; sourceTree = "<group>"; };
+		6FD5615A18BADDEF001617F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6FD5615B18BADDEF001617F7 /* bg-nerd_lab_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-nerd_lab_logo.png"; sourceTree = "<group>"; };
+		6FD5615C18BADDEF001617F7 /* bg-space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-space.png"; sourceTree = "<group>"; };
+		6FD5615D18BADDEF001617F7 /* Credits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Credits.png; sourceTree = "<group>"; };
+		6FD5615E18BADDEF001617F7 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		6FD5615F18BADDEF001617F7 /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
+		6FD5616618BAE148001617F7 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		6FD5616718BAE177001617F7 /* d320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d320.png; sourceTree = "<group>"; };
+		6FD5616818BAE1B0001617F7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6FD5616918BAE1E5001617F7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		6FD5616A18BAE20A001617F7 /* Icon~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~iphone.png"; sourceTree = "<group>"; };
+		6FD5616B18BAE228001617F7 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		6FD5616C18BAE23D001617F7 /* Icon@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x~iphone.png"; sourceTree = "<group>"; };
+		6FD5616D18BAE253001617F7 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		6FD5616E18BAE54B001617F7 /* bg-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-1.png"; sourceTree = "<group>"; };
+		6FD5617018BAE604001617F7 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		6FD5617118BAE604001617F7 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
+		6FD5617218BAE604001617F7 /* CreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsViewController.xib; sourceTree = "<group>"; };
+		6FD5617618BAF01B001617F7 /* Credits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Credits@2x.png"; sourceTree = "<group>"; };
+		6FD5617718BAF01B001617F7 /* Default-568h@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png.png"; sourceTree = "<group>"; };
+		6FD5617A18BAF0AA001617F7 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		6FFE12CF18AEFA6E00E0DFC7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6FFE130A18AFDFFF00E0DFC7 /* ofxBonjourIp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBonjourIp.cpp; sourceTree = "<group>"; };
 		6FFE130B18AFDFFF00E0DFC7 /* ofxBonjourIp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxBonjourIp.h; sourceTree = "<group>"; };
@@ -164,7 +197,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* cinemaControl.app */,
+				1D6058910D05DD3D006BFB54 /* nerdlab.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +205,18 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6FD5617A18BAF0AA001617F7 /* Icon-120.png */,
+				6FD5617618BAF01B001617F7 /* Credits@2x.png */,
+				6FD5617718BAF01B001617F7 /* Default-568h@2x.png.png */,
+				6FD5616E18BAE54B001617F7 /* bg-1.png */,
+				6FD5616D18BAE253001617F7 /* Icon-40@2x.png */,
+				6FD5616C18BAE23D001617F7 /* Icon@2x~iphone.png */,
+				6FD5616B18BAE228001617F7 /* Icon-Small.png */,
+				6FD5616A18BAE20A001617F7 /* Icon~iphone.png */,
+				6FD5616918BAE1E5001617F7 /* Icon@2x.png */,
+				6FD5616818BAE1B0001617F7 /* Icon.png */,
+				6FD5616718BAE177001617F7 /* d320.png */,
+				6FD5616618BAE148001617F7 /* Default~iphone.png */,
 				6FFE139F18B129CE00E0DFC7 /* images */,
 				6FFE12CF18AEFA6E00E0DFC7 /* CFNetwork.framework */,
 				E4D8936A11527B74007E1F53 /* src */,
@@ -260,6 +305,12 @@
 		6FFE139F18B129CE00E0DFC7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6FD5615A18BADDEF001617F7 /* Default.png */,
+				6FD5615B18BADDEF001617F7 /* bg-nerd_lab_logo.png */,
+				6FD5615C18BADDEF001617F7 /* bg-space.png */,
+				6FD5615D18BADDEF001617F7 /* Credits.png */,
+				6FD5615E18BADDEF001617F7 /* Play.png */,
+				6FD5615F18BADDEF001617F7 /* Play@2x.png */,
 				6F296EA418B517CA00511AB3 /* block-background.png */,
 				6FFE13A018B129E200E0DFC7 /* nerdlab.png */,
 			);
@@ -349,6 +400,9 @@
 				6F7230C1184CF133009BFCCD /* SetupViewController.h */,
 				6F7230C2184CF133009BFCCD /* SetupViewController.mm */,
 				6F7230C3184CF133009BFCCD /* SetupViewController.xib */,
+				6FD5617018BAE604001617F7 /* CreditsViewController.h */,
+				6FD5617118BAE604001617F7 /* CreditsViewController.m */,
+				6FD5617218BAE604001617F7 /* CreditsViewController.xib */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -415,9 +469,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* cinemaControl */ = {
+		1D6058900D05DD3D006BFB54 /* nerdlab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "cinemaControl" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "nerdlab" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -429,9 +483,9 @@
 			dependencies = (
 				E41D410413B3A11300A75A5D /* PBXTargetDependency */,
 			);
-			name = cinemaControl;
+			name = nerdlab;
 			productName = iPhone;
-			productReference = 1D6058910D05DD3D006BFB54 /* cinemaControl.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* nerdlab.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -446,7 +500,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "cinemaControl" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "nerdlab" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -466,7 +520,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* cinemaControl */,
+				1D6058900D05DD3D006BFB54 /* nerdlab */,
 			);
 		};
 /* End PBXProject section */
@@ -487,11 +541,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB24DDCA10DA781C00E9C588 /* ofxiphone-Info.plist in Resources */,
+				6FD5617418BAE604001617F7 /* CreditsViewController.xib in Resources */,
+				6FD5617918BAF01B001617F7 /* Default-568h@2x.png.png in Resources */,
+				6FD5616518BADDEF001617F7 /* Play@2x.png in Resources */,
+				6FD5616118BADDEF001617F7 /* bg-nerd_lab_logo.png in Resources */,
 				6F7230C5184CF133009BFCCD /* SetupViewController.xib in Resources */,
+				6FD5616218BADDEF001617F7 /* bg-space.png in Resources */,
+				6FD5616018BADDEF001617F7 /* Default.png in Resources */,
+				6FD5616F18BAE54B001617F7 /* bg-1.png in Resources */,
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
+				6FD5617818BAF01B001617F7 /* Credits@2x.png in Resources */,
 				6F7230CE184D3EF5009BFCCD /* PauseViewController.xib in Resources */,
 				6FFE13A118B129E200E0DFC7 /* nerdlab.png in Resources */,
+				6FD5616318BADDEF001617F7 /* Credits.png in Resources */,
+				6FD5616418BADDEF001617F7 /* Play.png in Resources */,
 				6F296EA518B517CA00511AB3 /* block-background.png in Resources */,
+				6FD5617B18BAF0AA001617F7 /* Icon-120.png in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F7230C4184CF133009BFCCD /* SetupViewController.mm in Sources */,
+				6FD5617318BAE604001617F7 /* CreditsViewController.m in Sources */,
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				E4D8936F11527B74007E1F53 /* testApp.mm in Sources */,
 				8f5205aef8861ef234f0651aba6be2ee /* ofxOscSender.cpp in Sources */,
@@ -555,14 +621,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clay Ewing (KHAL662TJ5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
 				INFOPLIST_FILE = "ofxiphone-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = cinemaControl;
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = nerdlab;
+				PROVISIONING_PROFILE = "C46829C3-CE9D-4A68-AD67-95644F23439C";
 				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
@@ -570,14 +636,14 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clay Ewing (KHAL662TJ5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
 				INFOPLIST_FILE = "ofxiphone-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = cinemaControl;
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = nerdlab;
+				PROVISIONING_PROFILE = "C46829C3-CE9D-4A68-AD67-95644F23439C";
 				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;
@@ -664,7 +730,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "cinemaControl" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "nerdlab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -673,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "cinemaControl" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "nerdlab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
