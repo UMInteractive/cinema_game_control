@@ -20,6 +20,9 @@
 		640279ee111671bd026cb0137d5b121e /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = c2fac65c491d4231379f3298ec59c6e9 /* ofxOscReceiver.cpp */; };
 		67fe4c7b15c2f0478c8126c28fa6aad0 /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3b361208cd4107e479f04e7bce6d93aa /* NetworkingUtils.cpp */; };
 		6F296EA518B517CA00511AB3 /* block-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F296EA418B517CA00511AB3 /* block-background.png */; };
+		6F40998C19BB7250002AEF7F /* ofxOpenALSoundPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F40998719BB7250002AEF7F /* ofxOpenALSoundPlayer.cpp */; };
+		6F40998D19BB7250002AEF7F /* README in Resources */ = {isa = PBXBuildFile; fileRef = 6F40998919BB7250002AEF7F /* README */; };
+		6F40998E19BB7250002AEF7F /* SoundEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F40998A19BB7250002AEF7F /* SoundEngine.cpp */; };
 		6F7230C4184CF133009BFCCD /* SetupViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F7230C2184CF133009BFCCD /* SetupViewController.mm */; };
 		6F7230C5184CF133009BFCCD /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7230C3184CF133009BFCCD /* SetupViewController.xib */; };
 		6F7230CD184D3EF5009BFCCD /* PauseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F7230CB184D3EF5009BFCCD /* PauseViewController.mm */; };
@@ -100,6 +103,11 @@
 		63a47ac60ffafc3bf093ec0f62a9a4d4 /* OscOutboundPacketStream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscOutboundPacketStream.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp; sourceTree = SOURCE_ROOT; };
 		65eefa3da3526e9cdd9c21f90d9b5684 /* ofxOscBundle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscBundle.cpp; path = ../../../addons/ofxOsc/src/ofxOscBundle.cpp; sourceTree = SOURCE_ROOT; };
 		6F296EA418B517CA00511AB3 /* block-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-background.png"; sourceTree = "<group>"; };
+		6F40998719BB7250002AEF7F /* ofxOpenALSoundPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOpenALSoundPlayer.cpp; sourceTree = "<group>"; };
+		6F40998819BB7250002AEF7F /* ofxOpenALSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOpenALSoundPlayer.h; sourceTree = "<group>"; };
+		6F40998919BB7250002AEF7F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		6F40998A19BB7250002AEF7F /* SoundEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundEngine.cpp; sourceTree = "<group>"; };
+		6F40998B19BB7250002AEF7F /* SoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEngine.h; sourceTree = "<group>"; };
 		6F7230C1184CF133009BFCCD /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
 		6F7230C2184CF133009BFCCD /* SetupViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SetupViewController.mm; sourceTree = "<group>"; };
 		6F7230C3184CF133009BFCCD /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupViewController.xib; sourceTree = "<group>"; };
@@ -284,6 +292,19 @@
 			name = posix;
 			sourceTree = "<group>";
 		};
+		6F40998619BB7250002AEF7F /* ofxOpenALSoundPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6F40998719BB7250002AEF7F /* ofxOpenALSoundPlayer.cpp */,
+				6F40998819BB7250002AEF7F /* ofxOpenALSoundPlayer.h */,
+				6F40998919BB7250002AEF7F /* README */,
+				6F40998A19BB7250002AEF7F /* SoundEngine.cpp */,
+				6F40998B19BB7250002AEF7F /* SoundEngine.h */,
+			);
+			name = ofxOpenALSoundPlayer;
+			path = ../../../addons/ofxOpenALSoundPlayer;
+			sourceTree = "<group>";
+		};
 		6FFE130818AFDFFF00E0DFC7 /* ofxBonjourIp */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +374,7 @@
 		BB16F26B0F2B646B00518274 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				6F40998619BB7250002AEF7F /* ofxOpenALSoundPlayer */,
 				6FFE13A318B4099700E0DFC7 /* ofxCenteredTrueTypeFont */,
 				6FFE130818AFDFFF00E0DFC7 /* ofxBonjourIp */,
 				e6053ab7fec63d5f83825b880ce53c41 /* ofxOsc */,
@@ -554,6 +576,7 @@
 				6F7230CE184D3EF5009BFCCD /* PauseViewController.xib in Resources */,
 				6FFE13A118B129E200E0DFC7 /* nerdlab.png in Resources */,
 				6FD5616318BADDEF001617F7 /* Credits.png in Resources */,
+				6F40998D19BB7250002AEF7F /* README in Resources */,
 				6FD5616418BADDEF001617F7 /* Play.png in Resources */,
 				6F296EA518B517CA00511AB3 /* block-background.png in Resources */,
 				6FD5617B18BAF0AA001617F7 /* Icon-120.png in Resources */,
@@ -587,11 +610,13 @@
 				6F7230C4184CF133009BFCCD /* SetupViewController.mm in Sources */,
 				6FD5617318BAE604001617F7 /* CreditsViewController.m in Sources */,
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
+				6F40998C19BB7250002AEF7F /* ofxOpenALSoundPlayer.cpp in Sources */,
 				E4D8936F11527B74007E1F53 /* testApp.mm in Sources */,
 				8f5205aef8861ef234f0651aba6be2ee /* ofxOscSender.cpp in Sources */,
 				6F7230CD184D3EF5009BFCCD /* PauseViewController.mm in Sources */,
 				72a929d3561b8232a182abfcbb325491 /* ofxOscBundle.cpp in Sources */,
 				640279ee111671bd026cb0137d5b121e /* ofxOscReceiver.cpp in Sources */,
+				6F40998E19BB7250002AEF7F /* SoundEngine.cpp in Sources */,
 				5864ad82e20f15536d054ea319473de3 /* ofxOscMessage.cpp in Sources */,
 				a29d8c96ae042eceaa1bd4f3cbbf0c9d /* NetworkingUtilsWin.cpp in Sources */,
 				28090deb5109115003e8f1c540f04092 /* UdpSocketWin.cpp in Sources */,
@@ -621,14 +646,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clay Ewing (KHAL662TJ5)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Clay Ewing (VTUM23GK73)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clay Ewing (VTUM23GK73)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
 				INFOPLIST_FILE = "ofxiphone-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = nerdlab;
-				PROVISIONING_PROFILE = "C46829C3-CE9D-4A68-AD67-95644F23439C";
+				PROVISIONING_PROFILE = "50F40231-1FE2-4EF4-BF7D-0A386D29C1C3";
 				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
@@ -636,14 +661,14 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Clay Ewing (KHAL662TJ5)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Clay Ewing (VTUM23GK73)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Clay Ewing (VTUM23GK73)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
 				INFOPLIST_FILE = "ofxiphone-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = nerdlab;
-				PROVISIONING_PROFILE = "C46829C3-CE9D-4A68-AD67-95644F23439C";
+				PROVISIONING_PROFILE = "50F40231-1FE2-4EF4-BF7D-0A386D29C1C3";
 				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;

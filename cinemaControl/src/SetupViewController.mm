@@ -144,8 +144,15 @@
 }
 
 -(void) updateBonjourList :(NSString *)bonjourAddress{
-    [bonjourList addObject:bonjourAddress];
+    if ([bonjourList indexOfObject:bonjourAddress] == NSNotFound) {
+        [bonjourList addObject:bonjourAddress];
 
+    }
+    else {
+        //already exists
+        NSLog(@"IP Already Exists at %i", [bonjourList indexOfObject:bonjourAddress]);
+
+    }
     //[bonjourPicker reloadAllComponents];
 }
 
